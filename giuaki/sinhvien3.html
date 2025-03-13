@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Cá Nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .skills {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .skill-bar {
+            height: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-level {
+            height: 100%;
+            background-color: #3498db;
+            border-radius: 5px;
+        }
+        
+        .education-item, .contact-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .education-item h3, .contact-item h3 {
+            margin-bottom: 0.5rem;
+            color: #3498db;
+        }
+        
+        .timeline {color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input, textarea {
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="qa.jpg"Mô tả hình ảnh" style="max-width: 100%; margin: 20px 0; border-radius: 8px;">
+        <p>Nhà phát triển Web | Thiết kế Đồ họa | </p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#education">Học Vấn</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <!-- PHẦN GIỚI THIỆU -->
+        <section id="about" class="section">
+            <h2>Giới Thiệu</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Xin chào! Tôi là MẠC TRUC QUỲNH ANH thiết kế đồ họa đầy nhiệt huyết với hơn kinh nghiệm trong ngành công nghệ thông tin.</p>
+                    <p>Tôi luôn tìm kiếm những thách thức mới và cơ hội để phát triển bản thân. Với sự kết hợp giữa kỹ năng thiết kế và lập trình, tôi có thể tạo ra những sản phẩm số hấp dẫn và đầy tính ứng dụng.</p>
+                    <p>Ngoài công việc, tôi còn là một nhiếp ảnh gia nghiệp dư và yêu thích khám phá những địa điểm mới. Tôi tin rằng những trải nghiệm đa dạng sẽ giúp tôi phát triển sự sáng tạo trong công việc.</p>
+                </div>
+                
+                <div class="skills">
+                    <h3>Kỹ Năng</h3>
